@@ -85,7 +85,7 @@ set background=dark
 if has("gui_macvim")
   set antialias                      " Pretty
   set guioptions=Ace                 " No menubar, toolbar or scrollbars, as minimal as possible
-  set guifont=Dejavu\ Sans\ Mono:h18 " Get Dejavu Sans mono here: http://dejavu-fonts.org/
+  set guifont=Dejavu\ Sans\ Mono:h13 " Get Dejavu Sans mono here: http://dejavu-fonts.org/
   set fuoptions=maxvert,maxhorz      " Fixes Full Screen on OSX
   " If you are on OSX Lion, and you hate Lion's native full screen, turn it off for macvim:
   "   defaults write org.vim.MacVim MMNativeFullScreen 0
