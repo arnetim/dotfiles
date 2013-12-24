@@ -28,6 +28,10 @@ export PATH=$PATH:$HOME/.dotfiles/bin
 export PATH="/usr/local/share/npm/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
 
+# Java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+export MAVEN_OPTS='-Xmx512m -XX:MaxPermSize=128m'
+
 # General aliases
 alias l='ls -halo'
 alias ltr='ls -lt'
@@ -74,6 +78,12 @@ alias f='git fetch'
 alias fetch='git fetch'
 alias gf='git fetch && git status'
 alias push='git push'
+
+# Java aliases
+alias java6="export JAVA_HOME=`/usr/libexec/java_home -v 1.6`"
+alias java7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`"
+alias enable-maven-debug='export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=8000'
+alias start-postgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 
 function r() {
