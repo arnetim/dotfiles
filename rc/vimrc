@@ -27,6 +27,7 @@ Bundle 'tpope/vim-fugitive'
 " Colorschemes
 Bundle 'wgibbs/vim-irblack'
 Bundle 'vim-scripts/tir_black'
+Bundle 'chriskempson/base16-vim'
 
 " Syntax & Language Support
 Bundle 'hail2u/vim-css3-syntax'
@@ -78,17 +79,17 @@ filetype plugin indent on
 " SETTINGS
 " ==========================
 
+colorscheme base16-default
+set background=dark
+
 if has("gui_macvim")
   set antialias                      " Pretty
   set guioptions=Ace                 " No menubar, toolbar or scrollbars, as minimal as possible
   set guifont=Dejavu\ Sans\ Mono:h18 " Get Dejavu Sans mono here: http://dejavu-fonts.org/
-  colorscheme ir_black               " Pastel colors
   set fuoptions=maxvert,maxhorz      " Fixes Full Screen on OSX
   " If you are on OSX Lion, and you hate Lion's native full screen, turn it off for macvim:
   "   defaults write org.vim.MacVim MMNativeFullScreen 0
   " Press Ctrl+Cmd+F to go full screen
-else
-  colorscheme tir_black " Use Terminal version of ir_black
 end
 
 set vb t_vb=               " Turn off beep
