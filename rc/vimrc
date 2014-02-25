@@ -39,6 +39,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-cucumber'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'elzr/vim-json'
 
 " Other
 Bundle 'csexton/trailertrash.vim'
