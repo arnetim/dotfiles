@@ -82,6 +82,7 @@ alias push='git push'
 # Java aliases
 alias java6="export JAVA_HOME=`/usr/libexec/java_home -v 1.6`"
 alias java7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`"
+alias java8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
 alias enable-maven-debug='export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=8000'
 alias start-postgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
